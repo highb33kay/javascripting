@@ -1,0 +1,16 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: auto;
+}
+
+body{
+    background-color: #edfbfe;
+    font-family: "Poppins",sans-serif;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
