@@ -6,7 +6,7 @@ from .models import Game
 # Create your views here.
 
 
-class GameViewSet(viewsets.ModelViewSet):
+class GameViewSet(GameModelViewSet):
     Serializer_class = GameSerializer
     query_set = Game.objects.all()
 
