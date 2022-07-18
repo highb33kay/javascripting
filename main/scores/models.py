@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime
 from django.db import models
 
 # Create your models here.
@@ -15,4 +15,4 @@ class Game(models.Model):
     loss = models.IntegerField(verbose_name="loss")
     points = models.IntegerField(verbose_name='points')
     day_played = models.DateField(
-        default=date.date.today, verbose_name="date")
+        default=datetime.today, verbose_name="date")
