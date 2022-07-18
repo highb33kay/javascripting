@@ -15,5 +15,4 @@ class Game(models.Model):
     loss = models.IntegerField(verbose_name="loss")
     points = models.IntegerField(verbose_name='points')
     day_played = models.DateField(
-        default=date.date.today, verbose_name="date", blan
-    played=models.
+        default=date.date.today, verbose_name="date")
