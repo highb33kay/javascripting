@@ -1,18 +1,21 @@
 from datetime import datetime
 from django.db import models
 
-# Create your models here.
-
 
 class Player(models.Model):
     name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
 
 
 class Game(models.Model):
     player = models.ForeignKey(
         Player, verbose_name='player', on_delete=models.CASCADE)
-    wins = models.IntegerField(verbose_name='wins')
-    loss = models.IntegerField(verbose_name="loss")
-    points = models.IntegerField(verbose_name='points')
+    wins = models.IntegerField(verbose_name='wins', default=0)
+    loss = models.IntegerField(verbose_name="loss", default=0)
+    points = models.IntegerField(verbose_name='points', default=0)
     day_played = models.DateField(
         default=datetime.today, verbose_name="date")
+
+    # Create your models here.
