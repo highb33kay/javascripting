@@ -18,4 +18,6 @@ class Game(models.Model):
     day_played = models.DateField(
         default=datetime.today, verbose_name="date")
 
+    def __str__(self) -> str:
+        return str(self.player)
     # Create your models here.
