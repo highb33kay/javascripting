@@ -4,7 +4,7 @@ from .models import Game, Player
 
 
 class GameAdmin(admin.ModelAdmin):
-    list_display = ("player", "wins", "loss", "points", "day_played")
+    list_display = ("player", "played", "wins", "loss", "points", "day_played")
 
 
 admin.site.register(Game, GameAdmin)

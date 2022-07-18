@@ -17,6 +17,7 @@ class Game(models.Model):
     points = models.IntegerField(verbose_name='points', default=0)
     day_played = models.DateField(
         default=datetime.today, verbose_name="date")
+    played = models.IntegerField(verbose_name="played", default=0)
 
     def __str__(self) -> str:
         return str(self.player)
