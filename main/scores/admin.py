@@ -7,5 +7,5 @@ class GameAdmin(admin.ModelAdmin):
     list_display = ("player", "wins", "loss", "points", "day_played")
 
 
-admin.site.register(Game)
+admin.site.register(Game, GameAdmin)
 admin.site.register(Player)
