@@ -19,7 +19,7 @@ from rest_framework import routers
 from scores import views
 
 router = routers.DefaultRouter()
-router.register(r"game", views.Game, name="game")
+router.register(r"game", views.Game, "game")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
