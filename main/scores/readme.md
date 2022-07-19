@@ -1,0 +1,1 @@
+This is a react and Django app
