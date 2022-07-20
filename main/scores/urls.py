@@ -3,5 +3,5 @@ from .views import GameView
 from . import views
 
 urlpatterns = [
-    path("home", GameView.as_view()),
+    path("Game", GameView.as_view()),
 ]
